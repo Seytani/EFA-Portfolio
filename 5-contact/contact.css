@@ -1,0 +1,77 @@
+body {
+    background-color: #353535;
+}
+
+nav {
+    background: #2c2c2c;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+}
+#nav-home {
+    color: #e4bc56;
+}
+
+#nav-about {
+    color: #02a3c0;
+}
+
+#nav-gold {
+    color: #ea5292;
+}
+
+#nav-blue {
+    color: #9f58fc;
+}
+
+#nav-red {
+    color: #688e21;
+}
+
+#nav-contact {
+    color: #803580;
+}
+
+.text {
+    color: #e9e9e9;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .offcanvas-header {
+        display: block;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: black;
+        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+        z-index: 1;
+    }
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    background-color: #9f58fc;
+}

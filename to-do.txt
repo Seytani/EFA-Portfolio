@@ -1,0 +1,9 @@
+// change all css and js links in each page
+
+//add a carousel for projects or maybe a grid?
+
+//figure out how to center content vertically
+
+//come up with meaningful text
+
+//make the contact form look good

@@ -23,7 +23,7 @@ nav {
     background: rgb(194, 130, 151);
     border: rgb(194, 130, 151);
 }
-.btn-primary:active {
+.btn-primary:focus {
     background: rgb(117, 56, 76);
     border: rgb(129, 14, 52);
 }
@@ -53,9 +53,28 @@ nav {
     color: rgb(116, 78, 90);
 }
 
+.landing-image {
+    width: 60.6%;
+}
+
 .card-body {
     background-color: #e9e8e8;
 }
+
+footer {
+background: #A78C8A;
+color: rgb(230, 224, 224);
+font-size: 1.2em;
+border-top: #EBB2AF solid 10px;
+}
+
+.social-media {
+    padding: 0.2em;
+    color: rgb(230, 224, 224);
+    font-size: 2em;
+}
+
+
 
 /* animated text */
 .animated-1 {

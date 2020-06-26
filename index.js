@@ -30,6 +30,7 @@ anime.timeline({loop: true})
     delay: 100
   });
 
+
 //My code
 window.addEventListener('load', toggleHome);
 

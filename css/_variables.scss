@@ -1,0 +1,36 @@
+$bkg: #353535;
+$fore: #eeffff;
+$dFore: #d1dbdb;
+$pink: #f75392;
+$pinkHover: #e2417f;
+$pinkHoverLink: #f776a7;
+$purple: #b07af7;
+$lBlue: #5ad6d0;
+$blue: #02a3c0;
+$gray: #2e2e2e;
+$dGray: #252525;
+$lGray: #412d34;
+
+
+
+@mixin flex($justify-content: center, $flex-direction: column) {
+	display: flex;
+	justify-content: $justify-content;
+	flex-direction: $flex-direction;
+}
+
+@mixin btn($color: $pink) {
+	font-family: "Quicksand", sans-serif;
+	font-weight: bolder;
+	color: $fore;
+	border: none;
+	border-radius: 25px;
+	padding: 0.8em;
+	background: $pink;
+	cursor: pointer;
+	
+}
+
+@mixin row() {
+	@include flex();
+}

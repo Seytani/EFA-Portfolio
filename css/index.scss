@@ -1,0 +1,146 @@
+@import "./variables";
+@import "./breakpoints";
+
+body,
+html {
+	margin: 0px;
+	background: $bkg;
+	color: $fore;
+	font-family: "Quicksand", sans-serif;
+}
+
+i {
+	color: $fore;
+	font-size: 2.3em;
+	&:hover {
+		color: $purple;
+	}
+}
+.topper {
+	text-align: center;
+	p {
+		font-size: large;
+	}
+}
+.top-decorator {
+	height: 1.5em;
+	background: $dGray;
+}
+
+.btn {
+	@include btn;
+	&:hover {
+		background: $pinkHover;
+	}
+}
+.fixed-btn {
+	display: none;
+	z-index: 1;
+	background: -moz-linear-gradient($pink, $pinkHoverLink);
+	position: fixed;
+	left: calc(100% - 75px);
+	top: calc(100% - 75px);
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	&:hover {
+		background: -moz-linear-gradient($pinkHoverLink, $pink);
+	}
+}
+.avatar {
+	height: 80vw;
+	width: 80vw;
+	@include sm {
+		height: 50vw;
+		width: 50vw;
+	}
+	@include md {
+		height: 30vw;
+		width: 30vw;
+	}
+	@include xl {
+		height: 20vw;
+		width: 20vw;
+	}
+}
+.contact-links {
+	@include flex(center, row);
+	align-items: flex-end;
+	a {
+		margin: 0.2em;
+	}
+}
+.project-card {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	height: auto;
+	@include flex(center, column);
+	background: $gray;
+	padding: 1em;
+	border-radius: 15px;
+	&:hover {
+		background: $lGray;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+	.app-h {
+		@include flex(center);
+		align-items: center;
+	}
+	.app-sub-h {
+		color: $purple;
+	}
+	.app-link {
+		padding: 1em;
+		@include flex();
+		align-items: flex-end;
+		text-decoration: none;
+		color: $pink;
+		font-weight: bold;
+		&:hover {
+			color: $pinkHoverLink;
+			text-decoration: underline dotted $blue;
+		}
+	}
+	@include xl {
+		@include flex(center, row);
+		img {
+			width: 100vw;
+			height: auto;
+			border-radius: 15px;
+		}
+		.app-description {
+			@include flex(center);
+			padding-left: 2em;
+			width: 60vw;
+		}
+		.app-sub-desc {
+			padding: 1em;
+		}
+	}
+}
+
+.footer {
+	@include flex();
+	align-items: center;
+	background: $dGray;
+	height: 2em;
+}
+
+.container {
+	@include flex();
+	width: 80%;
+	margin: auto;
+}
+.row {
+	@include flex(center, row);
+}
+.column {
+	@include flex(center, column);
+	align-items: center;
+
+	padding: 1em;
+}
